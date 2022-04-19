@@ -8,8 +8,15 @@ module.exports = {
   theme: '@vuepress/theme-default',
   themeConfig: {
     logo: 'https://t.codingcat.top/static/imgs/logo.png',
+    sidebar: {
+      '/python/': [
+        'base',
+        'class'
+      ]
+    },
     navbar: [
       { text: '首页', link: '/'},
+      { text: 'Python', link: '/python/'},
       { text: '计算机网络',
         children: [
           { text: '基础篇', link: '/tcpip/'},
@@ -22,6 +29,7 @@ module.exports = {
       { text: 'MySQL', link: '/mysql'},
       { text: 'Redis', link: '/redis'},
       { text: '密码学', link: '/cryptography'},
+      { text: 'Github', link: 'https://github.com/istommao/itzoo' },
     ]
   },
 }
