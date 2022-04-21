@@ -7,16 +7,58 @@ module.exports = {
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
+    sidebarDepth: 2,
+    displayAllHeaders: true,
+    toc: { includeLevel: [2,3] },
     logo: 'https://t.codingcat.top/static/imgs/logo.png',
     sidebar: {
       '/python/': [
+        '',
         'base',
         'class'
-      ]
+      ],
+      '/da/': [
+        {
+          text: '数组 Array',
+          collapsible: false,
+          children: [
+            '/da/array/base'
+          ]
+        },
+        {
+          text: '链表 Linked-list',
+          collapsible: true,
+          children: [
+            '/da/linkedlist/reverse'
+          ]
+        },
+        {
+          text: '栈 Stack',
+          collapsible: true,
+          children: [
+            '/da/stack/base'
+          ]
+        },
+        {
+          text: '队列 Queue',
+          collapsible: true,
+          children: [
+            '/da/queue/base'
+          ]
+        },
+        {
+          text: '二叉树 Binary tree',
+          collapsible: true,
+          children: [
+            '/da/binarytree/base'
+          ]
+        },        
+      ],
     },
     navbar: [
       { text: '首页', link: '/'},
       { text: 'Python', link: '/python/'},
+      { text: '数据结构与算法', link: '/da/'},
       { text: '计算机网络',
         children: [
           { text: '基础篇', link: '/tcpip/'},
@@ -26,9 +68,14 @@ module.exports = {
           { text: 'IP篇', link: '/tcpip/ip'}
         ]
       },
-      { text: 'MySQL', link: '/mysql'},
-      { text: 'Redis', link: '/redis'},
-      { text: '密码学', link: '/cryptography'},
+      {
+        text: '数据库',
+        children: [
+          { text: 'MySQL 篇', link: '/mysql'},
+          { text: 'Redis 篇', link: '/redis'},
+        ]
+      },
+      // { text: '密码学', link: '/cryptography'},
       { text: 'Github', link: 'https://github.com/istommao/itzoo' },
     ]
   },
