@@ -50,7 +50,11 @@ module.exports = {
           text: '二叉树 Binary tree',
           collapsible: true,
           children: [
-            '/da/binarytree/base'
+            '/da/binarytree/base',
+            '/da/binarytree/preorder.traverse',
+            '/da/binarytree/inorder.traverse',
+            '/da/binarytree/postorder.traverse',
+            '/da/binarytree/level.traverse'
           ]
         },        
       ],
