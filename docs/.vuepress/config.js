@@ -36,7 +36,8 @@ module.exports = {
           text: '栈 Stack',
           collapsible: true,
           children: [
-            '/da/stack/base'
+            '/da/stack/base',
+            '/da/stack/minStack'
           ]
         },
         {
