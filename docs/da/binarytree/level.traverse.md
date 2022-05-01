@@ -4,6 +4,13 @@
 
 ## 队列实现
 
+![img](./level.binarytree.png)
+
+- 初始化队列 根节点入队列
+- 队头节点出队列
+- 节点的左右孩子入队列
+- 循环直至队列为空
+
 ```python
 def stack_print(root):
     node = root
