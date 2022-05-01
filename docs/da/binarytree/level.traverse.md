@@ -29,7 +29,7 @@ def stack_print(root):
             if node.right:
                 queue.append(node.right)
 
-        result.append(line)
+        result.extend(line)
 
     return result
 ```
