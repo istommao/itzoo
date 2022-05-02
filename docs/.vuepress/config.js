@@ -29,7 +29,8 @@ module.exports = {
           text: '链表 Linked-list',
           collapsible: true,
           children: [
-            '/da/linkedlist/reverse'
+            '/da/linkedlist/reverse',
+            '/da/linkedlist/circular'
           ]
         },
         {
