@@ -56,7 +56,8 @@ module.exports = {
             '/da/binarytree/preorder.traverse',
             '/da/binarytree/inorder.traverse',
             '/da/binarytree/postorder.traverse',
-            '/da/binarytree/level.traverse'
+            '/da/binarytree/level.traverse',
+            '/da/binarytree/binaryheap'
           ]
         },        
       ],
