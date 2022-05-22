@@ -12,6 +12,20 @@ module.exports = {
     toc: { includeLevel: [2,3] },
     logo: 'https://t.codingcat.top/static/imgs/logo.png',
     sidebar: {
+      '/bookmark/': [
+        {
+          text: '编程语言',
+          collapsible: false,
+          children: [
+            '/bookmark/golang'
+          ]
+        },
+        {
+          text: '数据结构与算法',
+          collapsible: false,
+          link: '/bookmark/da',
+        }
+      ],
       '/python/': [
         '',
         'base',
@@ -64,6 +78,7 @@ module.exports = {
     },
     navbar: [
       { text: '首页', link: '/'},
+      { text: 'BookMark', link: '/bookmark/'},
       { text: 'Python', link: '/python/'},
       { text: '数据结构与算法', link: '/da/'},
       { text: '计算机网络',
