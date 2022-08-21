@@ -27,9 +27,21 @@ module.exports = {
         }
       ],
       '/python/': [
-        '',
-        'base',
-        'class'
+        {
+          text: '安装',
+          collapsible: false,
+          children: [
+            '/python/'
+          ]
+        },
+        {
+          text: '基础篇',
+          collapsible: false,
+          children: [
+            '/python/base/',
+            '/python/base/functional'
+          ]
+        },
       ],
       '/da/': [
         {
